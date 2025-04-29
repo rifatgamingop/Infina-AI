@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Infina AI</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="logo.png" />
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo">
+    <h1>Infina AI</h1>
+  </header>
+
+  <main id="chatBox">
+    <div class="ai-message message">Hello! I’m Infina AI. How can I assist you today?</div>
+  </main>
+
+  <section id="inputArea">
+    <input type="text" id="userInput" placeholder="Type your message..." autocomplete="off" onkeydown="if(event.key === 'Enter') sendMessage()"/>
+    <button onclick="sendMessage()">Send</button>
+  </section>
+
+  <footer>
+    ⚠️ Infina AI may generate incorrect information. Please verify critical facts.<br>
+    &copy; 2025 Infina AI. All rights reserved.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
